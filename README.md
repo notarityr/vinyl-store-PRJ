@@ -1,2 +1,5 @@
 # vinyl-store-PRJ
 Projeto de web page básica de uma loja de vendas de vinyl utilizando HTML e CSS, com o objetivo de aplicar conceitos de design responsivo, incluindo a utilização de Flexbox para criar um layout flexível e adaptável.
+<br>
+<br>
+A web page pode ser visualizada clicando aqui: https://notarityr.github.io/vinyl-store-PRJ/
