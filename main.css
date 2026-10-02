@@ -1,0 +1,170 @@
+/*reset básico*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*cabeçalho*/
+header {
+    padding: 20px;
+    background-color: #2C1A47;
+    color: #fff;
+    text-align: center;
+}
+
+/*título principal*/
+header h1 {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 2.5rem;
+}
+
+/*texto abaixo do título*/
+header p {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+/*menu de navegação*/
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFD700;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+/*seção de introdução*/
+.intro {
+    padding: 30px;
+    text-align: center;
+    background-color: #F4F4F4;
+}
+
+/*seção de produtos*/
+.produtos {
+    padding: 40px;
+    background-color: #fff;
+}
+
+.produtos h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #2C1A47;
+}
+
+/*grid de produtos*/
+.grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+/*item de produto*/
+.item {
+    background-color: #EDEDED;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s ease;
+}
+
+/*efeito hover no item*/
+.item:hover {
+    transform: scale(1.05);
+    background-color: #D1C4E9;
+}
+
+/*seção de contato*/
+.contato {
+    padding: 40px;
+    background-color: #F4F4F4;
+}
+
+.contato h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2C1A47;
+}
+
+/*formulário*/
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    color: #2C1A47;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+button {
+    padding: 12px;
+    background-color: #2C1A47;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #FFD700;
+    color: #2C1A47;
+}
+
+/*rodapé*/
+footer {
+    padding: 15px;
+    text-align: center;
+    background-color: #2C1A47;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+/*imagens gerais*/
+img {
+    max-width: 100%; /*imagem nunca ultrapassa o tamanho do container*/
+    height: auto; /*mantém proporção original*/
+    display: block; /*remove espaços extras abaixo da imagem*/
+    margin: 0 auto; /*centraliza dentro do container*/
+    border-radius: 8px; /*deixa cantos arredondados para estética*/
+}
+
+/*imagem da capa da loja*/
+header img {
+    height: 100%; /*ocupa toda a largura do cabeçalho*/
+    max-height: 300px; /*limite de altura para não ficar exagerado*/
+    object-fit: cover; /*corta e ajusta a imagem sem distorcer*/
+    margin-bottom: 15px; /*espaço entre a imagem e o título*/
+}
+
+/*imagens dos produtos*/
+.item img {
+    width: 100%; /*imagem ocupa toda a largura do card*/
+    max-height: 200px; /*limite de altura para manter proporção visual*/
+    object-fit: contain; /*mantém a imagem inteira dentro do espaço*/
+    margin-bottom: 10px; /*espaço entre a imagem e o texto*/
+}

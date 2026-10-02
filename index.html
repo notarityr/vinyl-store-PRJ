@@ -1,0 +1,87 @@
+<!--definição do tipo de documento e linguagem-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!--configuração de caracteres e responsividade-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--título da aba do navegador-->
+    <title>vinyl store - a sua loja de discos</title>
+    <!--importando css-->
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <!--cabeçalho com título e menu-->
+    <header>
+        <img src="./images/capa-loja.png" alt="capa da loja vinyl store">
+        <h1>vinyl store</h1>
+        <p>sua loja online de discos clássicos e modernos</p>
+
+        <!--menu de navegação-->
+        <nav>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">catálogo</a></li>
+                <li><a href="#">promoções</a></li>
+                <li><a href="#contato">contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--seção principal-->
+    <main>
+        <section class="intro">
+            <h2>bem-vindo à vinyl store</h2>
+            <p>descubra discos raros, clássicos e lançamentos exclusivos para colecionadores e amantes da música.</p>
+        </section>
+
+        <!--seção de produtos-->
+        <section class="produtos">
+            <h2>nossos discos (em breve)</h2>
+            <div class="grid">
+                <div class="item">
+                    <img src="./images/master-of-puppets.jpg" alt="disco master of puppets" /></li>
+                    <h3>disco clássico</h3>
+                    <p>uma seleção especial de álbuns que marcaram época</p>
+                </div>
+                <div class="item">
+                    <img src="./images/powerslave.jpg" alt="disco powerslave" /></li>
+                    <h3>novidades</h3>
+                    <p>os lançamentos mais recentes em vinil</p>
+                </div>
+                <div class="item">
+                    <img src="./images/rust-in-peace.jpg" alt="disco rust in peace" /></li>
+                    <h3>edições limitadas</h3>
+                    <p>discos raros e colecionáveis para apaixonados por música</p>
+                </div>
+            </div>
+        </section>
+
+        <!--seção de contato-->
+        <section id="contato" class="contato">
+            <h2>fale conosco</h2>
+            <form>
+                <!--campo de nome-->
+                <label for="nome">nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <!--campo de email-->
+                <label for="email">email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <!--campo de mensagem-->
+                <label for="mensagem">mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+                <!--botão de envio-->
+                <button type="submit">enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <!--rodapé-->
+    <footer>
+        <p>© 2026 vinyl store - todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
